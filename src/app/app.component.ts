@@ -7,4 +7,11 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'life-cycle';
+
+  textButton: string = 'Destruir'
+  isAliveCheckSample: boolean = true
+
+  disposeCheckSample():void{
+    this.isAliveCheckSample = !this.isAliveCheckSample
+  }
 }
